@@ -11,7 +11,7 @@ export default function JobAdvertisementList() {
         let jobAdvertisementService = new JobAdvertisementService()
         jobAdvertisementService.getActiveJobPostings()
         .then(result => setJobAdvertisements(result.data.data))
-        .catch(result => console.log(result.Error))
+        .catch(result => console.log(result))
     },[])
 
     const images = [
